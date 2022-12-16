@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Navbar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div>
+            <div class="navigation-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="/"><img src="./img/logo.svg" alt="Логотип"></a>
+            <div class="navigation-dropdown">
+                <button class="navigation-button" onclick="onShowList()">
+                    <img src="img/city.svg" alt="city"/>
+                    Москва
+                </button>
+                <div class="navigation-dropdown-content">
+                    <div>
+                        <input type="text" placeholder="Регион, город, населенный пункт" class="navigation-search-input"
+                               oninput="onSearch()">
+                        <ul class="navigation-selected-areas"></ul>
+                        <ul class="navigation-dropdown-content__cites"></ul>
+                        <div class="loader"></div>
+                    </div>
+                    <button onclick="onSave()" class="navigation-button__save">Сохранить</button>
+                </div>
+            </div>
+            <div class="navigation-menu-mobile">
+                <button class="navigation-button" onclick="onShowList()">
+                    <img src="img/city.svg" alt="city"/>
+                    Москва
+                </button>
+
+                <ul>
+                    <li><a href="/">Вузы</a></li>
+                    <li><a href="/">Колледжи</a></li>
+                    <li><a href="/">Техникумы</a></li>
+                    <li><a href="/">Училища</a></li>
+                    <li><a href="/">Специальности</a></li>
+                    <li><a href="/">Профессии</a></li>
+                    <li><a href="/">Отзывы</a></li>
+                    <li><a href="/">Учебным заведениям</a></li>
+                </ul>
+            </div>
+            <input type="text" id="input" placeholder="Учебное заведение, специальность или профессия">
+            <div class="navigation-right">
+                <img src="./img/love.svg" alt="love">
+                <span class="navigation-right__number">1</span>
+                <span>Екатерина</span>
+                <img src="./img/avatar.png" alt="avatar" class="navigation-right__img">
+            </div>
+
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="/">Вузы</a></li>
+                <li><a href="/">Колледжи</a></li>
+                <li><a href="/">Техникумы</a></li>
+                <li><a href="/">Училища</a></li>
+                <li><a href="/">Специальности</a></li>
+                <li><a href="/">Профессии</a></li>
+                <li><a href="/">Отзывы</a></li>
+                <li><a href="/">Учебным заведениям</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<script src="navbar.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</body>
+</html>
